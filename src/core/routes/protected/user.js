@@ -1,6 +1,6 @@
 import express from "express";
-import { userController } from "../../controllers";
-import { isAdmin } from "../../utils";
+import { userController } from "../../controllers/index.js";
+import { isAdmin } from "../../utils/index.js";
 const router = express.Router();
 
 router.get("/all", isAdmin(userController.getAllUsers));

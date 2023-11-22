@@ -1,5 +1,5 @@
-import { menuController } from "../../controllers";
-import { isAdmin } from "../../utils";
+import { menuController } from "../../controllers/index.js";
+import { isAdmin } from "../../utils/index.js";
 import express from "express";
 
 const router = express.Router();

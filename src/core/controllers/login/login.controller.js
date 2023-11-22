@@ -1,4 +1,4 @@
-import { userModel } from "../../models";
+import { userModel } from "../../models/index.js";
 import bcrypt from "bcryptjs";
 import {
   onError,
@@ -7,7 +7,7 @@ import {
   messageResponse,
   globalCatch,
   jwt,
-} from "../../utils";
+} from "../../utils/index.js";
 
 const loginController = async (request, response) => {
   try {

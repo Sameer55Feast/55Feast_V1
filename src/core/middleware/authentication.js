@@ -1,5 +1,5 @@
-import config from "../../../config";
-import { jwt, messageResponse, onError, sendResponse } from "../utils";
+import config from "../../../config/index.js";
+import { jwt, messageResponse, onError, sendResponse } from "../utils/index.js";
 
 const middleware = (app) => {
   app.use(async (request, response, next) => {

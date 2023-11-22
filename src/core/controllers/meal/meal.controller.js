@@ -4,8 +4,8 @@ import {
   sendResponse,
   messageResponse,
   globalCatch,
-} from "../../utils";
-import { mealModel, userModel } from "../../models";
+} from "../../utils/index.js";
+import { mealModel, userModel } from "../../models/index.js";
 
 const bookYourMeal = async (request, response) => {
   try {

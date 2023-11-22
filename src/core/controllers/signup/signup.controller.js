@@ -1,4 +1,4 @@
-import { userModel } from "../../models";
+import { userModel } from "../../models/index.js";
 import bcrypt from "bcryptjs";
 import {
   onError,
@@ -6,8 +6,8 @@ import {
   sendResponse,
   messageResponse,
   globalCatch,
-} from "../../utils";
-import config from "../../../../config";
+} from "../../utils/index.js";
+import config from "../../../../config/index.js";
 import axios from "axios";
 
 const signupController = async (request, response) => {

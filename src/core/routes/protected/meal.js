@@ -1,6 +1,6 @@
 import express from "express";
-import { mealController } from "../../controllers";
-import { isAdmin } from "../../utils";
+import { mealController } from "../../controllers/index.js";
+import { isAdmin } from "../../utils/index.js";
 
 const router = express.Router();
 
